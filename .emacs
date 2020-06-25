@@ -28,8 +28,8 @@
 (eval-when-compile
   (require 'use-package))
 
-;; load path where configurations files are kept
-(add-to-list 'load-path "~/.emacs.d/configurations")
+;; load path where configuration files are kept
+(add-to-list 'load-path "~/.emacs.d/configs")
 
 ;; general-config
 (require 'general-config)
