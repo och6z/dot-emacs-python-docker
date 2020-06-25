@@ -28,14 +28,14 @@
 (eval-when-compile
   (require 'use-package))
 
-;; load path where configuration files are kept
-(add-to-list 'load-path "~/.emacs.d/configs")
+;; load path where settings files are kept
+(add-to-list 'load-path "~/.emacs.d/settings")
 
-;; general-config
-(require 'general-config)
+;; general-settings
+(require 'general-settings)
 
-;; miscellaneous-config
-;; (require 'miscellaneous-config)
+;; miscellaneous-settings
+(require 'misc-settings)
 
 ;; python-config
 ;; (require 'python-config)

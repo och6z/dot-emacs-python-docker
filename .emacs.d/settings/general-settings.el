@@ -1,6 +1,6 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; General configurations ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;
+;; General settings ;;
+;;;;;;;;;;;;;;;;;;;;;;
 
 ;; number of bytes of consing between garbage collections
 (setq gc-cons-threshold 64000000
@@ -234,4 +234,4 @@
   :ensure t)
 
 ;; add the symbol name to the features list
-(provide 'general-config)
+(provide 'general-settings)
