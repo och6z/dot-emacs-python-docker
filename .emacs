@@ -41,4 +41,4 @@
 (require 'docker-settings)
 
 ;; python-config
-;; (require 'python-config)
+(require 'python-settings)
