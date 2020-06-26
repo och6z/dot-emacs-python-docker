@@ -44,7 +44,12 @@
   ;; control tabs or space are used for indentation
   (setq-default indent-tabs-mode nil)
   ;; list of tab stop positions
-  (setq tab-stop-list (number-sequence 4 200 4)))
+  (setq tab-stop-list (number-sequence 4 200 4))
+  ;; untabify spaces when save file
+  ;; (add-hook 'write-file-hooks
+  ;;           (lambda ()
+  ;;             (untabify (point-min) (point-max))))
+  )
 
 (use-package electricity
   :defer t
