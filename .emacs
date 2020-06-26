@@ -37,5 +37,8 @@
 ;; miscellaneous-settings
 (require 'misc-settings)
 
+;; docker-settings
+(require 'docker-settings)
+
 ;; python-config
 ;; (require 'python-config)
