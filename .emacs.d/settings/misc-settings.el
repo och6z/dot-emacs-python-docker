@@ -58,12 +58,6 @@
   (yas-reload-all)
   (yas-global-mode t))
 
-;; collection of yasnippet snippets for many languages
-(use-package yasnippet-snippets
-  :ensure t
-  :defer t
-  :after yasnippet)
-
 ;; DocView mode is a major mode for viewing DVI, PostScript (PS), PDF, OpenDocument, and Microsoft Office documents
 (use-package doc-view
   :defer t
