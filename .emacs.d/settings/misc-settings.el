@@ -58,12 +58,6 @@
   (yas-reload-all)
   (yas-global-mode t))
 
-;; DocView mode is a major mode for viewing DVI, PostScript (PS), PDF, OpenDocument, and Microsoft Office documents
-(use-package doc-view
-  :defer t
-  :config
-  (setq doc-view-continuous t))
-
 ;; automatically reverts the current buffer when its visited file changes on disk
 (use-package auto-revert
   :defer t

@@ -9,14 +9,15 @@
       '(("gnu" . "http://elpa.gnu.org/packages/")
         ("melpa-stbl" . "https://stable.melpa.org/packages/")
         ("melpa" . "http://melpa.org/packages/")
-        ;; ("elpy" . "https://jorgenschaefer.github.io/packages/")
+        ("elpy" . "https://jorgenschaefer.github.io/packages/")
         ;; ("org" . "http://orgmode.org/elpa/")
         ;; ("marmalade" . "http://marmalade-repo.org/elpa/")
         )
       package-archive-priorities
       '(("gnu" . 10)
         ("melpa-stbl" . 5)
-        ("melpa" . 3)))
+        ("melpa" . 3)
+        ("elpy" . 3)))
 (package-initialize)
 
 ;; install use-package if necessary
@@ -40,5 +41,5 @@
 ;; docker-settings
 (require 'docker-settings)
 
-;; python-config
+;; python-settings
 (require 'python-settings)
