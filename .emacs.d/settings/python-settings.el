@@ -8,7 +8,7 @@
   :mode
   ("\\.py$" . python-mode)
   :config
-  (setq python-shell-interpreter "python3"
+  (setq python-shell-interpreter "python"
         python-indent-offset 4
         python-indent-guess-indent-offset t
         python-indent-guess-indent-offset-verbose nil
@@ -26,7 +26,7 @@
   (add-hook 'python-mode-hook 'elpy-mode)
   :load-path "~/.emacs.d/elpa/elpy-[0-9.]*\\'"
   :config
-  (setq elpy-rpc-python-command "python3"
+  (setq elpy-rpc-python-command "python"
         elpy-rpc-virtualenv-path 'system)
   )
 
