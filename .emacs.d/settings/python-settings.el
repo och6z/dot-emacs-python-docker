@@ -8,13 +8,12 @@
   :mode
   ("\\.py$" . python-mode)
   :config
-  (setq python-shell-interpreter "python"
+  (setq python-shell-interpreter "ipython"
         python-indent-offset 4
         python-indent-guess-indent-offset t
         python-indent-guess-indent-offset-verbose nil
         ;; iPython interpreter
-        ; python-shell-interpreter "ipython"
-        ; python-shell-interpreter-args "--simple-prompt -i"
+        python-shell-interpreter-args "-i --simple-prompt"
         ))
 
 ;; emacs python development environment
