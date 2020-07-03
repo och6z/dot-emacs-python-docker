@@ -101,13 +101,7 @@
   (global-whitespace-mode t)
   ;; delete trailing whitespace before saving
   (add-hook 'before-save-hook 'delete-trailing-whitespace)
-  :custom-face
-  (whitespace-trailing ((t (:background "light gray" :foreground "dark-violet"))))
-  (whitespace-tab ((t (:background "light gray" :foreground "red"))))
-  (whitespace-space-after-tab ((t (:background nil :foreground "yellow"))))
-  (whitespace-space ((t (:background nil :foreground "red"))))
-  (whitespace-newline ((t (:background nil :foreground "red"))))
-  (whitespace-empty ((t (:background "light gray" :foreground nil)))))
+  )
 
 ;;;;;;;;;;;;
 ;; Files/ ;;
@@ -207,8 +201,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;
 
 (use-package menu-bar
-  :custom-face
-  (menu ((t (:background "color-235" :foreground "color-246"))))
   :config
   (menu-bar-mode t))
 
@@ -222,21 +214,27 @@
 ;; Faces/Basic Faces ;;
 ;;;;;;;;;;;;;;;;;;;;;;;
 
-(use-package faces
-  :custom-face
-  (tty-menu-disabled-face ((t (:background "color-242" :foreground "lightgray"))))
-  (tty-menu-enabled-face ((t (:background "color-246" :foreground "color-235")))))
-
 ;;;;;;;;;;;;;;;;;;;;
 ;; Custom themes ;;
 ;;;;;;;;;;;;;;;;;;;;
 
-(use-package ample-theme
+(use-package zenburn-theme
   :init
-  (progn (load-theme 'ample t t)
-         (enable-theme 'ample))
+  (progn (load-theme 'zenburn t)
+         (enable-theme 'zenburn))
   :defer t
-  :ensure t)
+  :ensure t
+  :custom-face
+  (menu ((t (:background "color-235" :foreground "color-246"))))
+  (tty-menu-disabled-face ((t (:background "color-242" :foreground "lightgray"))))
+  (tty-menu-enabled-face ((t (:background "color-246" :foreground "color-235"))))
+  (whitespace-empty ((t (:background "light gray" :foreground nil))))
+  (whitespace-newline ((t (:background nil :foreground "brightblack"))))
+  (whitespace-space ((t (:background nil :foreground "brightblack"))))
+  (whitespace-space-after-tab ((t (:background nil :foreground "yellow"))))
+  (whitespace-tab ((t (:background "light gray" :foreground "brightblack"))))
+  (whitespace-trailing ((t (:background "light gray" :foreground "dark-violet"))))
+  )
 
 ;; add the symbol name to the features list
 (provide 'general-settings)
