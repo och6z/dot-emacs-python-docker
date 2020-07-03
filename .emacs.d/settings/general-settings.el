@@ -229,10 +229,10 @@
   (tty-menu-disabled-face ((t (:background "color-242" :foreground "lightgray"))))
   (tty-menu-enabled-face ((t (:background "color-246" :foreground "color-235"))))
   (whitespace-empty ((t (:background "light gray" :foreground nil))))
-  (whitespace-newline ((t (:background nil :foreground "brightblack"))))
-  (whitespace-space ((t (:background nil :foreground "brightblack"))))
+  (whitespace-newline ((t (:background nil :foreground "red"))))
+  (whitespace-space ((t (:background nil :foreground "red"))))
   (whitespace-space-after-tab ((t (:background nil :foreground "yellow"))))
-  (whitespace-tab ((t (:background "light gray" :foreground "brightblack"))))
+  (whitespace-tab ((t (:background "light gray" :foreground "red"))))
   (whitespace-trailing ((t (:background "light gray" :foreground "dark-violet"))))
   )
 
