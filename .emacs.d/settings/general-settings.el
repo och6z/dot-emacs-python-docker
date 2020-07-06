@@ -171,6 +171,16 @@
   ;; recentf mode is enabled
   (recentf-mode t))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; External/Processes/Term ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(use-package term
+  :defer t
+  :config
+  (setq explicit-shell-file-name "/bin/bash")
+  )
+
 ;;;;;;;;;;;;;;;;;
 ;; Environment ;;
 ;;;;;;;;;;;;;;;;;

@@ -71,10 +71,5 @@
   :init
   (global-visual-line-mode t))
 
-;; managing multiple terminal buffers
-(use-package multi-term
-  :ensure t
-  :defer t)
-
 ;; add the symbol name to the features list
 (provide 'misc-settings)
