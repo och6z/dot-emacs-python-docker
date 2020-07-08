@@ -8,12 +8,13 @@
   :mode
   ("\\.py$" . python-mode)
   :config
-  (setq python-shell-interpreter "ipython"
+  (setq python-shell-interpreter "python"
+        python-shell-interpreter-args "-i"
         python-indent-offset 4
         python-indent-guess-indent-offset t
         python-indent-guess-indent-offset-verbose nil
         ;; iPython interpreter
-        python-shell-interpreter-args "-i --simple-prompt"
+        ;; python-shell-interpreter-args "-i --simple-prompt"
         ))
 
 ;; emacs python development environment
@@ -38,6 +39,8 @@
   :ensure t
   ;; :init
   ;; (add-hook 'elpy-mode-hook 'flycheck-mode)
+  :config
+  (setq flycheck-idle-change-delay 0.1)
   )
 
 ;; use autopep8 to beautify a python buffer

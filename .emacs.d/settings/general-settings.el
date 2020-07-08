@@ -178,7 +178,7 @@
 (use-package term
   :defer t
   :config
-  (setq explicit-shell-file-name "/bin/bash")
+  (setq explicit-shell-file-name "/bin/sh")
   )
 
 ;;;;;;;;;;;;;;;;;
