@@ -23,6 +23,7 @@
   :after python
   :init
   (add-hook 'python-mode-hook 'elpy-mode)
+  (remove-hook 'elpy-modules 'elpy-module-flymake)
   ;; (add-hook 'elpy-mode-hook (lambda ()
   ;;                             (add-hook 'before-save-hook
   ;;                                       'elpy-black-fix-code nil t)))
@@ -30,6 +31,13 @@
   :config
   (setq elpy-rpc-python-command "python"
         elpy-rpc-virtualenv-path 'system)
+  )
+
+;; on-the-fly syntax checking
+(use-package flycheck
+  :ensure t
+  ;; :init
+  ;; (add-hook 'elpy-mode-hook 'flycheck-mode)
   )
 
 ;; use autopep8 to beautify a python buffer
